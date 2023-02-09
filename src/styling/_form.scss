@@ -1,0 +1,70 @@
+// Main form styling
+.bf-form-main {
+    margin: 1rem;
+    border: 1rem solid $bf-green-primary;
+    color: $bf-green-darkest;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+
+.form-container {
+    padding: 1.2rem;
+    background-color: $bf-green-secondary;
+
+    > ol {
+        list-style: none;
+
+        > .list-item {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            max-height: 6rem;
+
+            > .list-item-label {
+                margin-bottom: 0.5rem;
+            }
+
+            > .input-field {
+                padding: 0.3rem 0.8rem;
+                border: 0.1rem solid $bf-green-darkest;
+                border-radius: 4rem;
+                font-size: 1.2rem;
+
+                &:focus, &:active, &:focus-visible {
+                    border: 0.1rem solid $bf-green-bright;
+                }
+                
+                &:hover {
+                    border: 0.1rem solid $bf-green-bright;
+                }
+            }
+        }
+    }
+}
+
+.form-btn-footer {
+    position: relative;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: $bf-green-secondary;
+    border-top: 0.2rem solid $bf-font-main;
+}
+
+.list-container {
+    padding-bottom: 1rem;
+}
+
+.error-field {
+    position: relative;
+    background-color: $bf-red-light;
+    color: $bf-font-main;
+    border-radius: 4rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    width: fit-content;
+}

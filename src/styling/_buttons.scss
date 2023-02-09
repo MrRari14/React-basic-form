@@ -1,0 +1,81 @@
+.btn-container {
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    .btn {
+        color: $bf-bg-secondary;
+        font-size: 1.4rem;
+        font-weight: 600;
+        width: 12rem;
+        height: 4rem;
+        margin: 0 0.5rem;
+        border-radius: 2rem;
+        border: 0.2rem solid $bf-font-main;
+
+        &:hover, &:focus {
+            cursor: pointer;
+        }
+
+        &__accept {
+            background-color: $bf-green-success;
+
+            &:hover {
+                border: none;
+                background-color: $bf-green-hover;
+            }
+
+            &:focus {
+                position: relative;
+                left: 10%;
+
+            }
+        }
+        
+        &__decline {
+            background-color: $bf-red-main;
+
+            &:hover {
+                background-color: $bf-red-light;
+                border: none;
+
+                &::before {
+                    content: "X ";
+                }
+
+                &::after {
+                    content: " X"
+                }
+
+            }
+
+            &:focus {
+                position: relative;
+                top: 10%;
+
+            }
+        }
+
+        &__back {
+            background-color: yellow;
+            color: black;
+
+            &:hover {
+                background-color: lightyellow;
+
+                &::before {
+                    content: "<< ";
+                }
+            }
+        }
+
+        &__submit {
+            background-color: $bf-purple;
+
+            &:hover {
+                background-color: $bf-dark-purple;
+            }
+        }
+    }
+
+}

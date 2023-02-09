@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './form.css';
+import './main.css'
 import Form from './Form'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -9,4 +9,3 @@ root.render(
     <Form />
   </React.StrictMode>
 );
-
