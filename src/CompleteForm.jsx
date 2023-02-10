@@ -3,9 +3,17 @@ import { useFormik } from "formik";
 import * as Yup from 'yup';
 import SuccessMsg from "./SuccessMsg";
 import ReactDOM from 'react-dom/client';
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
 
 
-export default function CompleteForm () {    
+export default function CompleteForm () {
+    const { REACT_APP_SERVICE_ID } = process.env
+    const { REACT_APP_PUBLIC_KEY } = process.env
+    const { REACT_APP_CONFIRMATION_TEMPLATE_ID } = process.env
+    const { REACT_APP_ALERT_TEMPLATE_ID } = process.env
+
+    const form = useRef() 
     // Use formik to 'declare the state'
     const formik = useFormik({
         initialValues: {
@@ -30,16 +38,33 @@ export default function CompleteForm () {
         validateOnBlur: false,
 
         onSubmit: () => {
-            console.log('Submitted')
+            sendEmail();            
+
             const root = ReactDOM.createRoot(document.getElementById('bf-form-container'));
             root.render(
             <React.StrictMode>
                 <SuccessMsg />
             </React.StrictMode>
             );
-            
         },
     })
+
+    // Send email
+    function sendEmail() {
+        emailjs.sendForm(REACT_APP_SERVICE_ID , REACT_APP_CONFIRMATION_TEMPLATE_ID, form.current, REACT_APP_PUBLIC_KEY)
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+        });
+
+        emailjs.sendForm(REACT_APP_SERVICE_ID , REACT_APP_ALERT_TEMPLATE_ID, form.current, REACT_APP_PUBLIC_KEY)
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+        });
+    };
 
     function goBack() {
         window.location.reload()
@@ -48,7 +73,7 @@ export default function CompleteForm () {
     return (
         <>  
             <div id="bf-form-container" className="intro-container">
-                <form className="bf-form-main" onSubmit={formik.handleSubmit} >
+                <form ref={form} className="bf-form-main" onSubmit={formik.handleSubmit} >
                     <div className="form-container">
                         <ol className="list-container">
                             <li className="list-item">
