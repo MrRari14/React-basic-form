@@ -27,10 +27,10 @@ export default function CompleteForm () {
         },
         // Formik offers out of the box validation
         validationSchema: Yup.object({
-            userName : Yup.string().required("Oops, looks like you didn't give us a name"),
-            userSurname : Yup.string().required("Oops, looks like you didn't give us a surname"),
+            userName : Yup.string().required("Looks like you forgot your name"),
+            userSurname : Yup.string().required("Looks like you forgot your surname"),
             userRole : Yup.string().required("We'd like to know what your job is"),
-            userEmail : Yup.string().email().required('We need to be able to send you annoying emails bruh!'),
+            userEmail : Yup.string().email().required('Annoying emails are a must!'),
             userNationality : Yup.string().required("I'm curious, I like to know :)"),
         }),
 
@@ -125,7 +125,7 @@ export default function CompleteForm () {
 
                         <footer className="form-btn-footer btn-container">
                             <button  type="button" className="btn btn__back" onClick={goBack} >GO BACK</button>
-                            <button className="btn btn__submit" type="submit" >SUBMIT FORM</button>
+                            <button className="btn btn__submit" type="submit" >SUBMIT</button>
                         </footer>
                     </div>
                 </form>

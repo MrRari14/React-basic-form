@@ -1,0 +1,67 @@
+// Media queries //
+
+@media only screen and (max-width: 490px) {
+    .intro-container {
+        > .bf-intro-frame {
+            max-width: 97%;
+        }
+    }
+
+    .bf-intro-text {
+        font-size: 1rem !important;
+    }
+
+    .bf-form-main {
+        max-width: 97%;
+    }
+
+    .btn-container {
+        .btn {
+            max-width: 8rem;
+            height: 3rem;
+            font-size: 1rem;
+        }
+    }
+
+    .form-container {
+        padding: 1rem;
+        background-color: $bf-green-secondary;
+    
+        > ol {
+            list-style: none;
+
+            > .list-item {
+                display: flex;
+                flex-direction: column;
+                padding: 0.5rem;
+                max-height: 5rem;
+    
+                > .list-item-label {
+                    margin-bottom: 0.5rem;
+                }
+    
+                > .input-field {
+                    padding: 0.3rem 0.4rem;
+                    border: 0.1rem solid $bf-green-darkest;
+                    border-radius: 4rem;
+                    font-size: 1rem;
+    
+                    &:focus, &:active, &:focus-visible {
+                        border: 0.1rem solid $bf-green-bright;
+                    }
+                    
+                    &:hover {
+                        border: 0.1rem solid $bf-green-bright;
+                    }
+                }
+            }
+        }
+    }
+
+    .error-field {
+        background-color: transparent;
+        color: $bf-red-main;
+        margin-top: 0.1rem;
+        width: max-content;
+    }
+}

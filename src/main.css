@@ -210,4 +210,56 @@ h2 .bf-title:hover {
 }
 .btn-container .btn__submit:hover {
   background-color: darkorchid;
+}
+
+@media only screen and (max-width: 490px) {
+  .intro-container > .bf-intro-frame {
+    max-width: 97%;
+  }
+  .bf-intro-text {
+    font-size: 1rem !important;
+  }
+  .bf-form-main {
+    max-width: 97%;
+  }
+  .btn-container .btn {
+    max-width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .form-container {
+    padding: 1rem;
+    background-color: #E5FDD1;
+  }
+  .form-container > ol {
+    list-style: none;
+  }
+  .form-container > ol > .list-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    max-height: 5rem;
+  }
+  .form-container > ol > .list-item > .list-item-label {
+    margin-bottom: 0.5rem;
+  }
+  .form-container > ol > .list-item > .input-field {
+    padding: 0.3rem 0.4rem;
+    border: 0.1rem solid #285430;
+    border-radius: 4rem;
+    font-size: 1rem;
+  }
+  .form-container > ol > .list-item > .input-field:focus, .form-container > ol > .list-item > .input-field:active, .form-container > ol > .list-item > .input-field:focus-visible {
+    border: 0.1rem solid #16FF00;
+  }
+  .form-container > ol > .list-item > .input-field:hover {
+    border: 0.1rem solid #16FF00;
+  }
+  .error-field {
+    background-color: transparent;
+    color: red;
+    margin-top: 0.1rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }/*# sourceMappingURL=main.css.map */

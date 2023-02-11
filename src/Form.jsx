@@ -28,7 +28,7 @@ function DeclineMessage() {
             <div className="intro-container intro-container__decline" >
                 <div className="bf-intro-frame">
                     <h2>Oops!</h2>
-                    <p className="warning warning-text" >It seems you have not accepted the terms and conditions for us to handle the information you provide us. We are an evil corporation that needs control over you, so we cannot proceed then. Sorry to see you go!</p>
+                    <p className="warning warning-text" >It seems you have not accepted the terms and conditions for us to handle the information you provide us. To make sure you are on board with trying out this app you are required to agree.<br></br>Sad to see you go!<br></br>Thanks for your time anyways!</p>
                 </div>
             </div>
        </>
