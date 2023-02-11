@@ -58,3 +58,29 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+    .intro-container {
+        max-height: 100vh;
+        > .bf-intro-frame {
+            max-height: 97%;
+
+            > .bf-intro-frame-footer {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .form-container {
+        padding: 0.5rem;
+    }
+
+    .form-btn-footer {
+        margin-top: 0;
+    }
+
+    .bf-form-main {
+        border: 0.5rem solid $bf-green-primary;
+    }
+
+}

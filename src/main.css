@@ -95,6 +95,7 @@ h2 .bf-title:hover {
 .form-container {
   padding: 1.2rem;
   background-color: #E5FDD1;
+  border-radius: 0.5rem;
 }
 .form-container > ol {
   list-style: none;
@@ -249,5 +250,25 @@ h2 .bf-title:hover {
   }
   .form-container > ol > .list-item > .input-field:hover {
     border: 0.1rem solid #16FF00;
+  }
+}
+@media (max-width: 375px) {
+  .intro-container {
+    max-height: 100vh;
+  }
+  .intro-container > .bf-intro-frame {
+    max-height: 97%;
+  }
+  .intro-container > .bf-intro-frame > .bf-intro-frame-footer {
+    margin-top: 1rem;
+  }
+  .form-container {
+    padding: 0.5rem;
+  }
+  .form-btn-footer {
+    margin-top: 0;
+  }
+  .bf-form-main {
+    border: 0.5rem solid #C9F4AA;
   }
 }/*# sourceMappingURL=main.css.map */
