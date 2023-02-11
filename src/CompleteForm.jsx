@@ -19,7 +19,7 @@ export default function CompleteForm () {
         initialValues: {
             userName : '',
             userSurname : '',
-            userRole : '',
+            userRole : 'User',
             userProfession : '',
             userCompany : '',
             userEmail : '',
@@ -69,6 +69,8 @@ export default function CompleteForm () {
     function goBack() {
         window.location.reload()
     }
+
+    console.log(formik.values.userRole)
     // Return UI form
     return (
         <>  
@@ -91,9 +93,9 @@ export default function CompleteForm () {
                             <li className="list-item">
                                 <label className="list-item-label">I am a...</label>
                                 <select id="dropwdown" name="userRole" className="input-field" value={formik.values.userRole} onChange={formik.handleChange}>
-                                    <option value={'recruiter'} >Recruiter</option>
-                                    <option value={'company-but-not-recruiter'} >Company/Enterprise</option>
-                                    <option value={'private-user'} >Private user</option>
+                                    <option value={'User'} >Private user</option>
+                                    <option value={'Recruiter'} >Recruiter</option>
+                                    <option value={'Company'} >Company/Enterprise</option>
                                 </select>
                             </li>
 

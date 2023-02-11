@@ -69,18 +69,18 @@ class Form extends React.Component {
                 <div className="intro-container">
                     <div className="bf-intro-frame">
                         <header className="bf-intro-frame-header">
-                            <h2 className="bf-intro-title">Welcome to the Rari Corporation</h2>
+                            <h2 className="bf-intro-title">Welcome to the <span className="bf-title" title="Fictitious company under which I make & host projects">Rari Corporation*</span></h2>
                         </header>
                             <body className="bf-intro-body">
                                 <p className="bf-intro-text">Thank you for taking interest in this small project.
-                                <br></br>This is the first project I made using ReactJS.
+                                <br></br>This is the first project I made using <span className="bf-react-colour">ReactJS</span>.
                                 <br></br>
-                                The idea was to follow the official React learning paths by completing the tutorial provided by them.
+                                The idea was to follow the official <span className="bf-react-colour">React</span> learning paths by completing the tutorial provided by them.
                                 <br></br>
                                 I started this simple form after reaching step 6 of the first tutorial that consists of 12 steps in total.
                                 <br></br>
-                                With only the very basics of React and mostly using JSX, I managed to set up a simple form to allow a user to fill in some input fields and submit the information.
-                                <br></br>Proceeding with the form means you help providing me with some basic information about yourself and why you're navigating through these basic projects.
+                                With only the very basics of React and mostly using <span className="bf-react-colour">JSX</span>, I managed to set up a simple form to allow a user to fill in some input fields and submit the information.
+                                <br></br><br></br>Proceeding with the form means you help providing me with some basic information about yourself and why you're navigating through these basic projects.
                                 <br></br>
                                 If this is okay with you, click on the accept button to continue!</p>
                             </body>
