@@ -57,7 +57,7 @@ h2 .bf-title:hover {
   border-top: 0.2rem solid #3C6255;
   position: relative;
   padding-top: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding-top: 0.5rem;
 }
 .intro-container > .bf-intro-frame__submited {
@@ -124,7 +124,7 @@ h2 .bf-title:hover {
 .form-btn-footer {
   position: relative;
   padding-top: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: flex;
   justify-content: space-between;
   background-color: #E5FDD1;
