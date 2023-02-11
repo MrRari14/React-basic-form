@@ -1,6 +1,10 @@
 import React from "react";
 
 export default function SuccessMsg () {
+    function backToHome() {
+        window.location.reload()
+    }
+
     return (
         <>
             <div className="intro-container intro-container">
@@ -10,6 +14,11 @@ export default function SuccessMsg () {
                         </header>
                         <p className="bf-intro-text">Your information has been sent to The Rari Corp., and you should recieve an email confirmation as well!</p>
                     </div>
+                    <footer className="bf-intro-frame-footer">
+                            <div className="btn-container">
+                                <button type="button" className="btn btn__back" onClick={backToHome}>HOME</button>
+                            </div>
+                    </footer>
                 </div>
         </>
     )

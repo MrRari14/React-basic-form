@@ -1,6 +1,6 @@
 // Media queries //
 
-@media only screen and (max-width: 490px) {
+@media (max-width: 600px) {
     .intro-container {
         > .bf-intro-frame {
             max-width: 97%;
@@ -56,12 +56,5 @@
                 }
             }
         }
-    }
-
-    .error-field {
-        background-color: transparent;
-        color: $bf-red-main;
-        margin-top: 0.1rem;
-        width: max-content;
     }
 }

@@ -136,16 +136,11 @@ h2 .bf-title:hover {
 }
 
 .error-field {
-  position: relative;
-  background-color: lightcoral;
-  color: black;
-  border-radius: 4rem;
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.2rem 0.5rem;
-  width: -moz-fit-content;
-  width: fit-content;
+  background-color: transparent;
+  color: red;
+  margin-top: 0.1rem;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .btn-container {
@@ -212,7 +207,7 @@ h2 .bf-title:hover {
   background-color: darkorchid;
 }
 
-@media only screen and (max-width: 490px) {
+@media (max-width: 600px) {
   .intro-container > .bf-intro-frame {
     max-width: 97%;
   }
@@ -254,12 +249,5 @@ h2 .bf-title:hover {
   }
   .form-container > ol > .list-item > .input-field:hover {
     border: 0.1rem solid #16FF00;
-  }
-  .error-field {
-    background-color: transparent;
-    color: red;
-    margin-top: 0.1rem;
-    width: -moz-max-content;
-    width: max-content;
   }
 }/*# sourceMappingURL=main.css.map */
